@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav></nav>
+        <div class='navbar'>
+            <div class='header-title'>
+                <h1>Trello Clone</h1>
+            </div>
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+    <main id="app">
+        <section id="dashboard-header">
+            <div class="info-section">
+                <div class="info-title">Data Insights</div>
+                <div class="info-sub-title">Project id - #456454</div>
+            </div>
+             <div class="add-section-form">
+              <input type="text" placeholder="Add a new section...">
+              <button type="button">+</button>
+            </div>
+        </section>
+        <section id="board-content">
+            <div class="board">
+                   <div class="board-header">
+                       <div class="board-title">Header name</div>
+                       <button type="button" onclick="addNewTask()">Add Task</button>
+                   </div>
+                   <div class="board-tasks">
+                       <div class="task">
+                            <div class="task-title">
+                              Notification feature
+                            </div>
+                            <button type="button">X</button>
+                       </div>
+                   </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/add-new-task.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
